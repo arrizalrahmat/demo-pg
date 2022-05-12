@@ -1,0 +1,21 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    <form action="/<%= data.id %>" method="POST">
+        <label for="fullName">Full name:</label><br>
+        <input type="text" id="fullName" value="<%= data.fullName %>" name="fullName"><br>
+        <label for="position">position:</label><br>
+        <input type="text" id="position" value="<%= data.position %>" name="position"><br>
+        <label for="salary">salary:</label><br>
+        <input type="number" id="salary" value="<%= data.salary %>" name="salary"><br>
+        <br>
+        <input type="submit" name="submit">
+      </form>
+</body>
+</html>
